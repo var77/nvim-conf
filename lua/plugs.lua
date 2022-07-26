@@ -29,7 +29,6 @@ require("packer").startup(
     use "hrsh7th/cmp-cmdline"
     use "saadparwaiz1/cmp_luasnip"
     use "TovarishFin/vim-solidity"
-    use "sbdchd/neoformat"
 
     -- Fuzzy finder
     use {
@@ -120,7 +119,7 @@ require("packer").startup(
       requires = "kyazdani42/nvim-web-devicons"
     }
 
-    --    use "mhartington/formatter.nvim"
+    use "mhartington/formatter.nvim"
 
     -- TO SORT AND REMOVE AFTER
 
@@ -181,7 +180,7 @@ require "plugins_setup.telescope"
 require "plugins_setup.cmp"
 require "plugins_setup.lspconfig"
 require "plugins_setup.nvim-tree"
--- require "plugins_setup.formatter"
+require "plugins_setup.formatter"
 require "plugins_setup.toggleterm"
 require "plugins_setup.nvim-dap"
 require "tests"

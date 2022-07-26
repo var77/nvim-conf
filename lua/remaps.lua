@@ -28,3 +28,8 @@ vimp.nnoremap("<leader>u", ":UndotreeShow<CR>")
 -- Vimrc related
 vimp.nnoremap("<leader>ev", ":vsplit $MYVIMRC<cr>")
 vimp.nnoremap("<leader>sv", ":luafile $MYVIMRC<CR>")
+vimp.nnoremap("<C-f>", ":FormatWrite<CR>")
+
+
+-- Copy to clipboard
+vim.opt.clipboard = 'unnamedplus';
