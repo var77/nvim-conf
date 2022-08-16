@@ -6,13 +6,6 @@ require("packer").startup(
     -- Terminal app
     use {"akinsho/toggleterm.nvim"}
 
-    -- Debugger
-    use "mfussenegger/nvim-dap"
-    use {"rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"}}
-    use {"theHamsta/nvim-dap-virtual-text", requires = {"mfussenegger/nvim-dap"}}
-    use "David-Kunz/jester"
-    use "nvim-telescope/telescope-dap.nvim"
-
     -- Helper functions
     use "nvim-lua/plenary.nvim"
     use "svermeulen/vimpeccable"
@@ -182,7 +175,6 @@ require "plugins_setup.lspconfig"
 require "plugins_setup.nvim-tree"
 require "plugins_setup.formatter"
 require "plugins_setup.toggleterm"
-require "plugins_setup.nvim-dap"
 require "tests"
 
 require("gitsigns").setup {
