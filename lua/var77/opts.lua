@@ -42,4 +42,4 @@ g.vrfr_rg = "true"
 g.netrw_banner = 0
 g.netrw_winsize = 25
 
---vim.api.nvim_command('autocmd BufRead,BufNewFile *.hbs set filetype=html')
+vim.opt.clipboard = 'unnamedplus';

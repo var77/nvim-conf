@@ -1,10 +1,8 @@
-local vimp = require("vimp")
-
 local tree_cb = require "nvim-tree.config".nvim_tree_callback
-vimp.nnoremap("<c-b>", ":NvimTreeToggle<CR>")
-vimp.nnoremap("<leader>tf", ":NvimTreeFindFile<CR>")
-vimp.nnoremap("<leader>=", ":NvimTreeResize 100<CR>")
-vimp.nnoremap("<leader>-", ":NvimTreeResize 40<CR>")
+vim.keymap.set("n", "<c-b>", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>tf", ":NvimTreeFindFile<CR>")
+vim.keymap.set("n", "<leader>=", ":NvimTreeResize 100<CR>")
+vim.keymap.set("n", "<leader>-", ":NvimTreeResize 40<CR>")
 
 require "nvim-tree".setup {
   update_cwd = true,

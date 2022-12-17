@@ -13,13 +13,12 @@ require("telescope").setup {
 -- load_extension, somewhere after setup function:
 require("telescope").load_extension("fzf")
 require("telescope").load_extension("neoclip")
-require("telescope").load_extension("dap")
 
-local vimp = require("vimp")
 -- TELECSOPE bindings
-vimp.nnoremap("<C-P>", ":lua require('telescope.builtin').find_files({ path_display = { shorten = 5 } })<cr>")
-vimp.nnoremap("<leader>fg", "<cmd>Telescope live_grep<cr>")
-vimp.nnoremap("<leader>fb", "<cmd>Telescope buffers<cr>")
-vimp.nnoremap("<leader>fh", "<cmd>Telescope help_tags<cr>")
-vimp.nnoremap("<leader>fs", "<cmd>Telescope search_history<cr>")
-vimp.nnoremap("<leader>fu", "<cmd>Telescope grep_string<cr>")
+vim.keymap.set("n", "<C-P>", ":lua require('telescope.builtin').find_files({ path_display = { shorten = 5 } })<cr>")
+vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
+vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
+vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
+vim.keymap.set("n", "<leader>fs", "<cmd>Telescope search_history<cr>")
+vim.keymap.set("n", "<leader>fu", "<cmd>Telescope grep_string<cr>")
+vim.keymap.set("n", "<leader>fc", "<cmd>Telescope neoclip<cr>")

@@ -1,4 +1,1 @@
-require 'remaps'
-require 'abbreviations'
-require 'opts'
-require 'plugs'
+require("var77")
