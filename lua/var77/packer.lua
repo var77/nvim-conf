@@ -130,4 +130,9 @@ return require('packer').startup(function(use)
     }
   }
 
+  -- multi cursors
+  use {
+    "mg979/vim-visual-multi"
+  }
+
 end)
