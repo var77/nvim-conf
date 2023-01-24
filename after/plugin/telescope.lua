@@ -7,6 +7,9 @@ require("telescope").setup {
       case_mode = "smart_case" -- or "ignore_case" or "respect_case"
       -- the default case_mode is "smart_case"
     }
+  },
+  defaults = {
+       file_ignore_patterns = { "^.git/", "^node_modules/" },
   }
 }
 -- To get fzf loaded and working with telescope, you need to call
@@ -15,7 +18,7 @@ require("telescope").load_extension("fzf")
 require("telescope").load_extension("neoclip")
 
 -- TELECSOPE bindings
-vim.keymap.set("n", "<C-P>", ":lua require('telescope.builtin').find_files({ path_display = { shorten = 5 } })<cr>")
+vim.keymap.set("n", "<C-P>", ":lua require('telescope.builtin').find_files({ path_display = { shorten = 5 }, hidden=true })<cr>")
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
