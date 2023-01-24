@@ -9,6 +9,9 @@ lsp.ensure_installed({
   'pyright'
 })
 
+lsp.set_preferences({
+  suggest_lsp_servers = false,
+})
 
 lsp.setup()
 
