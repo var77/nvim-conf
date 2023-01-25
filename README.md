@@ -8,7 +8,7 @@
 ### General
 `<leader>` - `space`
 
-`<leader>pv` - `:wq!`
+`<leader>wq` - `:wq!`
 
 `<leader>q` - `:q!`
 
