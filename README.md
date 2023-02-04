@@ -1,6 +1,8 @@
 ## Setup
 - Install `neovim` https://neovim.io/
 - Clone this repo under `~/.config/nvim`
+- Install Packer `git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
 - Open `neovim` and run `:PackerSync` to sync plugins
 
 ## Keybindings
