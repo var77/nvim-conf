@@ -135,4 +135,7 @@ return require('packer').startup(function(use)
     "mg979/vim-visual-multi"
   }
 
+  -- prettier
+  use "sbdchd/neoformat"
+
 end)

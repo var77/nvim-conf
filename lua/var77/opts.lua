@@ -42,4 +42,5 @@ g.vrfr_rg = "true"
 g.netrw_banner = 0
 g.netrw_winsize = 25
 
-vim.opt.clipboard = 'unnamedplus';
+opt.clipboard = 'unnamedplus';
+opt.mouse = ""

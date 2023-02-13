@@ -2,10 +2,9 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 lsp.ensure_installed({
   'tsserver',
+  'eslint',
   'sumneko_lua',
   'rust_analyzer',
-  'gopls',
-  'solang',
   'pyright'
 })
 
@@ -24,3 +23,5 @@ vim.diagnostic.config({
   float = true,
 })
 vim.opt.signcolumn = 'yes'
+-- prettier
+vim.g.neoformat_try_node_exe = 1
