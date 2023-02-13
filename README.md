@@ -65,3 +65,4 @@
 `gr` - show implementations of variable under the cursor
 
 `<leader>f` - format text with `:LspZeroFormat`
+`<leader>p` - format text with `:Neoformat` (prettier)
