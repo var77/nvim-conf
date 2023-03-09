@@ -29,6 +29,8 @@
 
 `<leader>fg` - telescope search for text in files
 
+`<leader>fh` - telescope toggle last search
+
 `<leader>tg` - show git status in telescope
 
 `<leader>fc` - find in clipboard history (then `<cr>` will copy to yank register and `<c-p>` will paste under cursor)
